@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro | Coliseo Centenario</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Estilos/estilos.css">
+<script src="app.js"></script>
+</head>
+<body data-pagina="registro">
+<header class="cabecera" id="cabecera"></header>
+<main><div class="contenedor"><h2>Registro</h2><form id="form" novalidate><label>Nombre completo<input required></label><label>Correo<input id="correo" type="email" required></label><label>Contraseña<input id="clave" type="password" required></label><label>Tipo de usuario<select id="rol"><option value="asistente">Asistente (comprador)</option><option value="organizador">Organizador / administrador</option></select></label><div id="campos-organizador" class="campos oculto"><label>Nombre del evento<input required></label><label>Tipo de evento<select required><option value="">Selecciona</option><option>Concierto</option><option>Lucha libre</option><option>Deportivo</option><option>Familiar</option></select></label><label>Descripción (mín. 50 caracteres)<textarea id="descripcion" rows="4" required></textarea></label></div><div id="campos-asistente" class="campos"><label>Ciudad<input required></label><label>Zona preferida<select id="zona-pref" required><option value="">Selecciona</option></select></label></div><button class="btn" type="submit">Crear cuenta</button></form></div></main>
+<footer class="pie" id="pie"></footer>
+</body>
+</html>
