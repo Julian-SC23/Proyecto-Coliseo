@@ -1,16 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Registro | Coliseo Centenario</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../Estilos/estilos.css">
-<script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro COLISEO CENTENARIO</title>
+    <link rel="stylesheet" href="../Estilos/estilos.css">
 </head>
-<body data-pagina="registro">
-<header class="cabecera" id="cabecera"></header>
-<main><div class="contenedor"><h2>Registro</h2><form id="form" novalidate><label>Nombre completo<input required></label><label>Correo<input id="correo" type="email" required></label><label>Contraseña<input id="clave" type="password" required></label><label>Tipo de usuario<select id="rol"><option value="asistente">Asistente (comprador)</option><option value="organizador">Organizador / administrador</option></select></label><div id="campos-organizador" class="campos oculto"><label>Nombre del evento<input required></label><label>Tipo de evento<select required><option value="">Selecciona</option><option>Concierto</option><option>Lucha libre</option><option>Deportivo</option><option>Familiar</option></select></label><label>Descripción (mín. 50 caracteres)<textarea id="descripcion" rows="4" required></textarea></label></div><div id="campos-asistente" class="campos"><label>Ciudad<input required></label><label>Zona preferida<select id="zona-pref" required><option value="">Selecciona</option></select></label></div><button class="btn" type="submit">Crear cuenta</button></form></div></main>
-<footer class="pie" id="pie"></footer>
+<body>
+    <!-- =============== MENÚ============================ -->
+    <header class="encabezado">
+        <div class="contenedor barra">
+            <a href="index.html" class="logo">COLISEO<span>CENTENARIO</span></a>
+
+            <nav class="menu">
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="#">Eventos</a>
+                <a href="#">Mis boletos</a>
+                <a href="#">Iniciar sesión</a>
+                <a href="Registro.html" class="boton-menu">Crear cuenta</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor pagina-centrada">
+ 
+    
+        <form class="formulario" action="#" method="post">
+            <h1 class="formulario-titulo">Crear cuenta</h1>
+            <p class="formulario-subtitulo">Regístrate para comprar y guardar tus boletos.</p>
+
+            <!-- Nombre -->
+            <div class="campo">
+                <label class="campo-etiqueta" for="nombre">Nombre completo</label>
+                <input class="campo-entrada" type="text" id="nombre"
+                name="nombre"  placeholder="Nombre como en INE"
+                autocomplete="name" required
+                >
+            </div>
+            
+        <!-- Correo -->
+            <div class="campo">
+                <label class="campo-etiqueta" for="correo">Correo electrónico</label>
+                <input class="campo-entrada" type="email" id="correo" name="correo"
+                placeholder="tucorreo@ejemplo.com" autocomplete="email" required
+                >
+            </div>
+
+        <!-- Teléfono -->
+            <div class="campo">
+                <label class="campo-etiqueta" for="telefono">
+                Teléfono <span class="campo-opcional">(opcional)</span>
+                </label>
+                <input class="campo-entrada" type="tel" id="telefono"
+            name="telefono" placeholder="87 00 00 00 00"  autocomplete="tel"
+                >
+            </div>
+
+        <!-- Contraseña -->
+            <div class="campo">
+                <label class="campo-etiqueta" for="clave">Contraseña</label>
+                <input class="campo-entrada" type="password" id="clave"
+                name="clave"  placeholder="Mínimo 8 caracteres"
+                minlength="8" autocomplete="new-password" required
+                >
+            </div>
+        
+        <!-- Confirmar contraseña -->
+            <div class="campo">
+                <label class="campo-etiqueta" for="clave2">Confirmar contraseña</label>
+                <input class="campo-entrada" type="password" id="clave2"
+                name="clave2" placeholder="Repite tu contraseña" minlength="8"
+                autocomplete="new-password" required
+                >
+            </div>
+        
+        <!-- Términos y condiciones -->
+            <label class="formulario-terminos">
+                <input class="formulario-casilla" type="checkbox" name="terminos" required>
+                <span>Acepto los <a href="#" class="formulario-enlace">términos y condiciones</a> y el aviso de privacidad.</span>
+            </label>
+
+            <!-- Botón -->
+            <button type="submit" class="boton boton-completo">Crear cuenta</button>
+        
+            <p class="formulario-pie"> ¿Ya tienes cuenta?  
+                <a href="#" class="formulario-enlace">Iniciar sesión</a> </p>
+        
+        </form>
+    
+    </main>
 </body>
 </html>

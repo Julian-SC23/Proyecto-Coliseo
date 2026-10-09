@@ -1,17 +1,110 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inicio | Coliseo Centenario</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../Estilos/estilos.css">
-<script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColiseoCentenario</title>
+    <link rel="stylesheet" href="../Estilos/estilos.css">
 </head>
-<body data-pagina="index">
-<header class="cabecera" id="cabecera"></header>
-<section class="banner"><div class="contenedor"><h1>Coliseo Centenario de Torreón</h1><p>Conciertos, lucha libre, deportes y espectáculos familiares. Elige tu zona y compra tus boletos en línea.</p><a class="btn" href="boletos.html">Comprar boletos</a></div></section>
-<main><div class="contenedor"><div class="datos"><div class="tarjeta"><h3>Próximas fechas</h3><p>Noviembre y diciembre de 2026</p></div><div class="tarjeta"><h3>Sede</h3><p>Coliseo Centenario, Torreón, Coahuila</p></div><div class="tarjeta"><h3>Compra y pago</h3><p>Asegura tu lugar.</p><a href="boletos.html"><img class="paypal" src="../Recursos/paypal.svg" alt="Pagar con PayPal"></a></div></div><h2>Próximos eventos</h2><div class="grid" id="proximos"></div></div></main>
-<footer class="pie" id="pie"></footer>
+<body>
+    <!-- =============== MENÚ============================ -->
+    <header class="encabezado">
+        <div class="contenedor barra">
+            <a href="index.html" class="logo">COLISEO<span>CENTENARIO</span></a>
+
+            <nav class="menu">
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="#">Eventos</a>
+                <a href="#">Mis boletos</a>
+                <a href="#">Iniciar sesión</a>
+                <a href="Registro.html" class="boton-menu">Crear cuenta</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =============== baner coliseo============================ -->
+    <section class="banner">
+        <img src="../Recursos/coliseo.jpg" alt="Vista del coliseo" class="banner-imagen">
+
+        <div class="contenedor banner-texto">
+            <h1 class="banner-titulo">Vive los mejores eventos en vivo</h1>
+            <p class="banner-descripcion">Conciertos, lucha libre, conferencias y espectáculos. 
+                Aparta tus lugares y paga seguro con PayPal.</p>
+            <a href="#" class="boton">Ver todos los eventos</a>
+            <a href="#proximos" class="boton boton-borde">Próximos eventos</a>
+        </div>
+    </section>
+
+    <!-- =============== proximos============================ -->
+    <section class="seccion" id="proximos">
+    <div class="contenedor">
+
+        <h2 class="seccion-titulo">Próximos eventos</h2>
+        <p class="seccion-subtitulo">Lo que viene en el Coliseo Centenario. Aparta tu lugar antes de que se agoten.</p>
+ 
+        <div class="rejilla">
+        <!-- Evento 2 -->
+            <article class="evento">
+                <div class="evento-cartel">
+                    <img src="../Recursos/enjambre.jpg" alt="Cartel de Conjunto Primavera y Firma" class="evento-imagen">
+                </div>
+                <div class="evento-info">
+                    <h3 class="evento-titulo">Conjunto Primavera y Firma</h3>
+                    <p class="evento-dato">10 Oct 2026 · 9:00 PM</p>
+                    <p class="evento-dato">Coliseo Centenario, Torreón</p>
+                    <p class="evento-precio">Precio por definir</p>
+                    <a href="#" class="boton boton-completo">Comprar boletos</a>
+                </div>
+        </article>
+ 
+        <!-- Evento 3 -->
+        <article class="evento">
+          <div class="evento-cartel">
+            <img src="../Recursos/enjambre.jpg" alt="Cartel de Enjambre, Daños Luz Tour 2026" class="evento-imagen">
+          </div>
+          <div class="evento-info">
+            <h3 class="evento-titulo">Enjambre · Daños Luz Tour 2026</h3>
+            <p class="evento-dato">17 Oct 2026</p>
+            <p class="evento-dato">Coliseo Centenario, Torreón</p>
+            <p class="evento-precio">Precio por definir</p>
+            <a href="#" class="boton boton-completo">Comprar boletos</a>
+          </div>
+        </article>
+        <!-- Evento 8 -->
+        <article class="evento">
+          <div class="evento-cartel">
+            <img src="../Recursos/enjambre.jpg" alt="Cartel de Natanael Cano, Vol. 1 Tour" class="evento-imagen">
+          </div>
+          <div class="evento-info">
+            <h3 class="evento-titulo">Natanael Cano · Vol. 1 Tour</h3>
+            <p class="evento-dato">28 Nov 2026</p>
+            <p class="evento-dato">Coliseo Centenario, Torreón</p>
+            <p class="evento-precio">Precio por definir</p>
+            <a href="#" class="boton boton-completo">Comprar boletos</a>
+          </div>
+        </article>
+ 
+        <!-- Evento 9 -->
+        <article class="evento">
+          <div class="evento-cartel">
+            <img src="../Recursos/enjambre.jpg" alt="Cartel de Yuridia" class="evento-imagen">
+          </div>
+          <div class="evento-info">
+            <h3 class="evento-titulo">Yuridia</h3>
+            <p class="evento-dato">Fecha por confirmar</p>
+            <p class="evento-dato">Coliseo Centenario, Torreón</p>
+            <p class="evento-precio">Precio por definir</p>
+            <a href="#" class="boton boton-completo">Comprar boletos</a>
+          </div>
+        </article>
+ 
+      </div>
+ 
+      <div class="seccion-final">
+        <a href="#" class="boton boton-borde">Ver todos los eventos</a>
+      </div>
+ 
+    </div>
+  </section>
 </body>
 </html>
