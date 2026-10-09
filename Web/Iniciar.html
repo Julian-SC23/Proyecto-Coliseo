@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IniciarSesion</title>
+    <link rel="stylesheet" href="../Estilos/estilos.css">
+</head>
+<body>
+    <!-- =============== MENÚ============================ -->
+    <header class="encabezado">
+        <div class="contenedor barra">
+            <a href="index.html" class="logo">COLISEO<span>CENTENARIO</span></a>
+
+            <nav class="menu">
+                <a href="#">Crear cuenta</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor pagina-centrada">
+        
+        <form class="formulario" action="#" method="post">
+            <h1 class="formulario-titulo">Iniciar Sesion</h1>
+            <p class="formulario-subtitulo">Inicia sesion para ver tus boletos</p>
+
+
+        <!-- Correo -->
+            <div class="campo">
+                <label class="campo-etiqueta" for="correo">Correo electrónico</label>
+                <input class="campo-entrada" type="email" id="correo" name="correo"
+                placeholder="tucorreo@ejemplo.com" autocomplete="email" required
+                >
+            </div>
+        <!-- Contraseña -->
+            <div class="campo">
+                <label class="campo-etiqueta" for="clave">Contraseña</label>
+                <input class="campo-entrada" type="password" id="clave"
+                name="clave"  placeholder="*********"
+                minlength="8" autocomplete="new-password" required
+                >
+            </div>
+            <!-- Botón -->
+            <button type="submit" class="boton boton-completo">Inicia sesion</button>
+        
+            <p class="formulario-pie"> ¿No tines cuenta?  
+                <a href="Registro.html" class="formulario-enlace">Crea una qui.</a> </p>
+        
+        </form>
+    
+    </main>
+    
+</body>
+</html>
