@@ -8,7 +8,7 @@
     --borde: #3a3a3a;
 }
 
-/* =======reglas globales======== */
+/* =======reglas globales======================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,7 +34,7 @@ a {
 }
 
 
-/* =======menu======== */
+/* =======menu========================================================*/
 .encabezado {
     background: var(--fondo-2);
     border-bottom: 1px solid var(--borde);
@@ -97,7 +97,7 @@ a {
     color: var(--fondo);
 }
 
-/* =======Baner======== */
+/* =======Baner========================================================= */
 .banner {
     position: relative;
     min-height: 440px;
@@ -147,7 +147,7 @@ a {
     margin-bottom: 26px;
 }
 
-/* =======boton bvaner======== */
+/* =======boton bvaner========================================================= */
 .boton {
     display: inline-block;
     padding: 12px 24px;
@@ -179,7 +179,7 @@ a {
     margin-top: 10px;
 }
 
-/* =======Eventos======== */
+/* =======Eventos========================================================= */
 .seccion {
     padding: 56px 0;
 }
@@ -258,7 +258,7 @@ a {
     font-weight: 700;
 }
 
-/* =======Formulario======== */
+/* =======Formulario========================================================= */
 .pagina-centrada {
     display: flex;
     align-items: center;
@@ -344,4 +344,62 @@ a {
     color: var(--texto-suave);
     font-size: 0.92rem;
     text-align: center;
+}
+
+
+
+/* ====== ESTILSO  DE MIS BOLETOS ================================================== */
+.boleto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    overflow: hidden;
+}
+ 
+.boleto-imagen {
+    width: 260px;
+    object-fit: cover;
+}
+ 
+.boleto-info {
+    flex: 1 1 260px;
+    padding: 20px;
+}
+ 
+.boleto-titulo {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+ 
+.boleto-lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background: var(--fondo-2);
+    border-left: 2px dashed var(--borde);
+    text-align: center;
+}
+ 
+.boleto-id {
+    font-family: Consolas, "Courier New", monospace;
+    font-weight: 700;
+}
+
+/* estilos para telefonos */
+@media (max-width: 700px) {
+    .boleto-imagen {
+        width: 100%;
+        height: auto;
+    }
+
+    .boleto-lateral {
+        width: 100%;
+        border-left: none;
+        border-top: 2px dashed var(--borde);
+    }
 }
