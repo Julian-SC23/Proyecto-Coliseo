@@ -623,3 +623,54 @@ a {
 #tipo-administrador:checked ~ .extra-administrador {
     display: block;
 }
+
+
+/* ====== CARTELERA, HISTORIAL, DETALLE Y PAGOS ============================= */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.filtros .campo {
+    flex: 1 1 180px;
+    margin-bottom: 0;
+}
+
+.tabla-scroll {
+    overflow-x: auto;
+}
+
+.detalle-imagen {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.paypal {
+    display: block;
+    height: 48px;
+    margin: 12px 0;
+}
+
+.pagos-subtitulo {
+    margin-top: 40px;
+}
+
+
+/* ====== BOTÓN CON LOGO DE PAYPAL AL LADO ================================== */
+.fila-boton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fila-boton .boton {
+    flex: 1;
+}
+
+.paypal-mini {
+    height: 28px;
+}
